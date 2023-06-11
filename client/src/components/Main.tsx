@@ -53,8 +53,9 @@ const Main: FC<Props> = (props: Props) => {
             <Box display="flex" gap={2} flexDirection={{ xs: "column", md: "row" }}>
                 <Card sx={{ flex: 1 }}>
                     {!houseId && <CardContent >
+                        <Typography color="text.primary" fontWeight={700} textAlign="center" fontSize={{ xs: "1rem", md: "1.1rem" }}>House Evaluation</Typography>
+                        <Typography color="text.secnodary" fontSize={{ xs: "0.7rem", md: "0.75rem" }} mt={1} mb={3} textAlign="center">Fill in your house information</Typography>
                         <Box display="flex" gap={3} flexDirection="column" alignItems="center">
-                            <Typography color="text.primary" fontWeight={700} fontSize={{ xs: "1rem", md: "1.1rem" }}>Your House</Typography>
                             <TextField label="Address" value={address}
                                 required
                                 fullWidth
@@ -65,14 +66,14 @@ const Main: FC<Props> = (props: Props) => {
                                 fullWidth
                                 value={currentValue}
                                 InputProps={{ startAdornment: <InputAdornment position="start">$</InputAdornment> }}
-                                onChange={(e) => {  setCurrentValue(Number(e.target.value)) }} />
+                                onChange={(e) => { setCurrentValue(Number(e.target.value)) }} />
                             <TextField label="Loan Amount"
                                 required
                                 fullWidth
                                 type="number"
                                 value={loanAmount}
                                 InputProps={{ startAdornment: <InputAdornment position="start">$</InputAdornment> }}
-                                onChange={(e) => {  setLoanAmount(Number(e.target.value)) }} />
+                                onChange={(e) => { setLoanAmount(Number(e.target.value)) }} />
                         </Box>
                         <Box display="flex" justifyContent="center" mt={4} mb={2}>
                             <Button variant="contained" disabled={isSaving} color="warning" onClick={() => { onSubmit() }} >

@@ -13,7 +13,7 @@ The NodeJS Express application, located in the ```/server/``` folder.
 Inside it's scope use ```npm install``` to install all dependencies and ```npm start``` to run the server application after that.
 
 > - The database is a development database at db4free.net
-> - All the database connections you need (for each environment) are in ```/server/config/database.json```.
+> - All the database connections you need are in ```/server/config/database.json```.
 
 #### Client-Side
 In the ```/client/``` folder we have the client-side React application.
