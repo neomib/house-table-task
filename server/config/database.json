@@ -1,0 +1,10 @@
+{
+    "development": {
+        "username": "housetable_root",
+        "password": "Rs123456!",
+        "database": "housetable",
+        "host": "db4free.net",
+        "dialect": "mysql"
+    }
+
+}
